@@ -1,0 +1,10 @@
+import os
+SECRET_KEY = "blbablabla"
+DEBUG = True
+DB_USERNAME = 'pcaltman'
+DB_PASSWORD = ''
+USERS_DATABASE_NAME = 'users'
+DB_HOST = os.getenv('IP', '0.0.0.0')
+DB_URI = "mysql+pymysql://%s:%s@%s/%s" % (DB_USERNAME, DB_PASSWORD, DB_HOST, USERS_DATABASE_NAME)
+SQLALCHEMY_DATABASE_URI = DB_URI
+SQLALCHEMY_TRACK_MODIFICATIONS=True

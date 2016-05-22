@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="raw">
+    <div class="col-md-12">
+      <h1>Bonjour {{ session.username }} </h1>
+      <p class="lead">Tu es ici dans ton environnement.<br>
+        Tu peux développer toutes les applications que tu désires :) </p>
+    </div>
+  </div><!-- /.raw -->
+</div><!-- /.container -->
+{% endblock %}
